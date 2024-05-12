@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="LRC">
+<meta name="description" content="LRC">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="LRC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/responsive.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="fixed_loading">
+        <div class="fixed_loading_inset">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+        </div>
+    </div>
+    <!-- header -->
+    <header class="header">
+        <div class="col-sm-5 left_header p-0">
+            <div class="toggle_bar"><span></span></div>
+            <div class="logo"><img src="assets/images/logo.png" alt="logo" /></div>
+        </div>
+
+        <div class="col-sm-7 right_header p-0">
+            <div class="search">
+                <div class="search_area">
+                    <form>
+                        <input type="text" placeholder="Type Something...">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <button class="search_icon"><img src="assets/images/search.svg" alt="search" /></button>
+                <button class="search_close"><img src="assets/images/close.svg" alt="close" /></button>
+            </div>
+            <div class="notifications">
+                <div class="dropdown">
+                    <i class="fa fa-circle"></i>
+                    <button class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"><img src="assets/images/notification.svg" alt="notification" /></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vitae
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="user">
+            <div class="image"><img src="assets/images/user.png"  alt="user"/></div>
+            <div class="user_name">
+                <h4>Myoshia Boykin</h4>
+                <p>Co. Founder</p>
+            </div>
+            <div class="logout">
+                <button><img src="assets/images/logout.svg" alt="logout" /></button>
+            </div>
+        </div>
+
+        <div class="nav_area">
+            <ul>
+                <li><a href="index.html"><span><img src="assets/images/dashboard.svg" alt="dashboard" /></span> <p>dashboard</p></a></li>
+                <li><a href="coaches.html"><span><img src="assets/images/coaches.svg" alt="coaches" /></span> <p>coaches</p></a></li>
+                <li class="active"><a href="clients.html"><span><img src="assets/images/clients.svg" alt="clients" /></span> <p>clients</p></a></li>
+                <li><a href="participants.html"><span><img src="assets/images/participants.svg" alt="participants" /></span> <p>participants</p></a></li>
+                <li><a href="surveys.html"><span><img src="assets/images/surveys.svg" alt="surveys" /></span> <p>surveys</p></a></li>
+                <li><a href="revenue.html"><span><img src="assets/images/revenue.svg" alt="revenue" /></span> <p>revenue</p></a></li>
+                <li><a href="reports.html"><span><img src="assets/images/reports.svg" alt="reports" /></span> <p>reports</p></a></li>
+            </ul>
+        </div>
+        <div class="copyright">Copyright &copy; 2022</div>
+    </aside>
+
+
+    <section class="display_section">
+        <div class="inside">
+
+            <div class="col-lg-12 single_block mt-3 mb-4">
+                <div class="shadow_box">
+
+                    <div class="page_title with_go_back">
+                        <a href="clients.html"><img src="assets/images/go-back.svg" alt="go-back /"></a>
+                        <h4>Client Detail</h4>
+                    </div>
+
+                    <!-- detail section -->
+                    <div class="row">
+                        <div class="col-lg-3 mt-4 left_block">
+                            <div class="profile_area">
+                                <div class="image"><img src="assets/images/ashley.png" alt="coach" /></div>
+                                <div class="name">Ashley Graham</div>
+                                <div class="email">ashleygraham@gmail.com</div>
+                                <div class="phone"><p><img src="assets/images/phone.png" alt="phone" /></p><span>+1-5454-5156-45</span></div>
+                                <div class="address"><p><img src="assets/images/address.png" alt="address" /></p><span>#123 Street Road, California (Near Super Mall Market) 90001</span></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 mt-4 center_block client_view_center">
+                            <div class="headline">Personal Details</div>
+                            <div class="detail_list">
+                                <ul>
+                                    <li>
+                                        <span>Title</span>
+                                        <p>CEO & Founder</p>
+                                    </li>
+                                    <li>
+                                        <span>Country</span>
+                                        <p>United States</p>
+                                    </li>
+                                    <li>
+                                        <span>State</span>
+                                        <p>California</p>
+                                    </li>
+                                    <li>
+                                        <span>City</span>
+                                        <p>Los Angeles</p>
+                                    </li>
+                                    <li>
+                                        <span>Zipcode</span>
+                                        <p>90001</p>
+                                    </li>
+                                    <li>
+                                        <span>Organization</span>
+                                        <p>XYZ</p>
+                                    </li>
+                                    <li>
+                                        <span>Organization URL</span>
+                                        <p>https://www.xyz.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-4 right_block">
+                            <div class="coach_area">
+                                <div class="data">
+                                    <div class="name">jennifer</div>
+                                    <div class="email">jennifer@gmail.com</div>
+                                    <div class="title">coach</div>
+                                </div>
+                                <div class="image"><img src="assets/images/coach-pic.png" alt="coach-pic" /></div>
+                            </div>
+                            <div class="avail_data">
+                                <ul>
+                                    <li>
+                                        <div class="data">
+                                            <p>Active Surveys</p>
+                                            <h3>12</h3>
+                                        </div>
+                                        <div class="image"><img src="assets/images/active-survey.png" alt="active-survey"></div>
+                                    </li>
+                                    <li>
+                                        <div class="data">
+                                            <p>Completed Surveys</p>
+                                            <h3>16</h3>
+                                        </div>
+                                        <div class="image"><img src="assets/images/leadership.png" alt="leadership"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- all listings -->
+                    <div class="below-title"><h4>All Surveys</h4></div>
+                    <div class="table_design">
+                        <div class="sort_by">
+                            <select>
+                                <option disabled selected>Sort by</option>
+                                <option>New Entries</option>
+                                <option>Old Entries</option>
+                            </select>
+                        </div>
+                        <table class="tableLayout responsive nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Sr. No</th>
+                                    <th>Survey Name</th>
+                                    <th>Survey Created Date</th>
+                                    <th>Participants</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Demo Survey Title</td>
+                                    <td>20 Aug 2022</td>
+                                    <td>15</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="survey-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                            <a href="#" class="view download"><img src="assets/images/download-table.svg" alt="download" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>What is lorem ipsum</td>
+                                    <td>05 Jul 2022	</td>
+                                    <td>12</td>
+                                    <td>Completed</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="survey-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                            <a href="#" class="view download"><img src="assets/images/download-table.svg" alt="download" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Where does it come from</td>
+                                    <td>10 Aug 2022</td>
+                                    <td>19</td>
+                                    <td>Completed</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="survey-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                            <a href="#" class="view download"><img src="assets/images/download-table.svg" alt="download" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Where can I get some</td>
+                                    <td>26 Jun 2022</td>
+                                    <td>16</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="survey-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                            <a href="#" class="view download"><img src="assets/images/download-table.svg" alt="download" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Where does it come from</td>
+                                    <td>07 May 2022</td>
+                                    <td>19</td>
+                                    <td>Completed</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="survey-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                            <a href="#" class="view download"><img src="assets/images/download-table.svg" alt="download" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Where can I get some</td>
+                                    <td>05 Jul 2022	</td>
+                                    <td>12</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="survey-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                            <a href="#" class="view download"><img src="assets/images/download-table.svg" alt="download" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/dataTable.js"></script>
+<script src="assets/js/dataTables.responsive.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

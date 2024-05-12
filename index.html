@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="LRC">
+<meta name="description" content="LRC">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="LRC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="fixed_loading">
+        <div class="fixed_loading_inset">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <div class="col-sm-5 left_header p-0">
+            <div class="toggle_bar"><span></span></div>
+            <div class="logo"><img src="assets/images/logo.png" alt="logo" /></div>
+        </div>
+
+        <div class="col-sm-7 right_header p-0">
+            <div class="search">
+                <div class="search_area">
+                    <form>
+                        <input type="text" placeholder="Type Something...">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <button class="search_icon"><img src="assets/images/search.svg" alt="search" /></button>
+                <button class="search_close"><img src="assets/images/close.svg" alt="close" /></button>
+            </div>
+            <div class="notifications">
+                <div class="dropdown">
+                    <i class="fa fa-circle"></i>
+                    <button class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"><img src="assets/images/notification.svg" alt="notification" /></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vitae
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="user">
+            <div class="image"><img src="assets/images/user.png"  alt="user"/></div>
+            <div class="user_name">
+                <h4>Myoshia Boykin</h4>
+                <p>Co. Founder</p>
+            </div>
+            <div class="logout">
+                <button><img src="assets/images/logout.svg" alt="logout" /></button>
+            </div>
+        </div>
+
+        <div class="nav_area">
+            <ul>
+                <li class="active"><a href="index.html"><span><img src="assets/images/dashboard.svg" alt="dashboard" /></span> <p>dashboard</p></a></li>
+                <li><a href="coaches.html"><span><img src="assets/images/coaches.svg" alt="coaches" /></span> <p>coaches</p></a></li>
+                <li><a href="clients.html"><span><img src="assets/images/clients.svg" alt="clients" /></span> <p>clients</p></a></li>
+                <li><a href="participants.html"><span><img src="assets/images/participants.svg" alt="participants" /></span> <p>participants</p></a></li>
+                <li><a href="surveys.html"><span><img src="assets/images/surveys.svg" alt="surveys" /></span> <p>surveys</p></a></li>
+                <li><a href="revenue.html"><span><img src="assets/images/revenue.svg" alt="revenue" /></span> <p>revenue</p></a></li>
+                <li><a href="reports.html"><span><img src="assets/images/reports.svg" alt="reports" /></span> <p>reports</p></a></li>
+            </ul>
+        </div>
+        <div class="copyright">Copyright &copy; 2022</div>
+    </aside>
+
+
+    <section class="display_section">
+        <div class="inside">
+            <div class="col-sm-12 coach_client">
+                <div class="row">
+                    <div class="col-lg-6 block">
+                        <div class="shadow_box">
+                            <div class="client_block">
+                                <div class="left">
+                                    <span>Coaches :</span>
+                                    <h2>125</h2>
+                                </div>
+                                <div class="users">
+                                    <ul>
+                                        <li><img src="assets/images/user1.png" alt="user" /></li>
+                                        <li><img src="assets/images/user2.png" alt="user" /></li>
+                                        <li><img src="assets/images/user3.png" alt="user" /></li>
+                                        <li><img src="assets/images/user4.png" alt="user" /></li>
+                                        <li><img src="assets/images/user5.png" alt="user" /></li>
+                                        <li><img src="assets/images/user6.png" alt="user" /></li>
+                                    </ul>
+                                    <div class="user_count">+119</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 block">
+                        <div class="shadow_box">
+                            <div class="client_block">
+                                <div class="left">
+                                    <span>Clients :</span>
+                                    <h2>365</h2>
+                                </div>
+                                <div class="users">
+                                    <ul>
+                                        <li><img src="assets/images/user5.png" alt="user" /></li>
+                                        <li><img src="assets/images/user6.png" alt="user" /></li>
+                                        <li><img src="assets/images/user3.png" alt="user" /></li>
+                                        <li><img src="assets/images/user1.png" alt="user" /></li>
+                                        <li><img src="assets/images/user2.png" alt="user" /></li>
+                                        <li><img src="assets/images/user4.png" alt="user" /></li>
+                                    </ul>
+                                    <div class="user_count">+305</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 features_block mt-2">
+                <div class="row">
+                    <div class="col-lg-3 single_block mb-4">
+                        <div class="shadow_box">
+                            <h4>Completed Survey</h4>
+                            <div id="chart"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 single_block mb-4">
+                        <div class="shadow_box">
+                            <h4>Pending Survey</h4>
+                            <div id="chart2"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 single_block mb-4">
+                        <div class="shadow_box">
+                            <h4>Total Survey</h4>
+                            <div class="num">259</div>
+                            <div class="pic"><img src="assets/images/survey-icon.png" alt="survey-icon" /></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 single_block mb-4">
+                        <div class="shadow_box">
+                            <h4>Upcoming Survey</h4>
+                            <div class="num">45</div>
+                            <div class="pic"><img src="assets/images/upcoming-survey.png" alt="survey-icon" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 total_revenue mt-2">
+                <div class="row">
+                    <div class="col-lg-12 single_block mb-4">
+                        <div class="shadow_box pt-4">
+                            <div id="revenueChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 plans_pricing mt-2">
+                <div class="row">
+                    <div class="col-lg-6 single_block mb-4">
+                        <div class="shadow_box pt-3">
+                            <div class="mb-4">
+                                <select class="form-control ">
+                                    <option disabled selected>Select Your Plan Duration</option>
+                                    <option>Monthly</option>
+                                    <option>Yearly</option>
+                                </select>
+                            </div>
+                            <div id="individualPlan"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 single_block mb-4">
+                        <div class="shadow_box pt-3">
+                            <div class="mb-4">
+                                <select class="form-control ">
+                                    <option disabled selected>Select Your Plan Duration</option>
+                                    <option>Monthly</option>
+                                    <option>Yearly</option>
+                                </select>
+                            </div>
+                            <div id="EnterprisePlan"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 recent_users mt-2">
+                <div class="row">
+                    <div class="col-lg-6 single_block mb-4">
+                        <div class="shadow_box">
+                            <div class="title_part">
+                                <h4>Recent Users</h4>
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#clientsList">clients</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#coachesList">coaches</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#particiPants">participants</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="clientsList">
+                                    <div class="all_list_data">
+                                        <ul>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user1.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Kristen Stewart</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user2.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Ada Wong</h6>
+                                                            <p>Wholefoods</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user3.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Leon Kennedy</h6>
+                                                            <p>Deloitte</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user4.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Ashley Graham</h6>
+                                                            <p>Developer</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user5.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Mike Miller</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user6.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Kristen Stewart</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="coachesList">
+                                    <div class="all_list_data">
+                                        <ul>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user1.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Kristen Stewart</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user2.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Ada Wong</h6>
+                                                            <p>Wholefoods</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user3.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Leon Kennedy</h6>
+                                                            <p>Deloitte</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user4.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Ashley Graham</h6>
+                                                            <p>Developer</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user5.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Mike Miller</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user6.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Kristen Stewart</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="particiPants">
+                                    <div class="all_list_data">
+                                        <ul>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user1.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Kristen Stewart</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user2.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Ada Wong</h6>
+                                                            <p>Wholefoods</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user3.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Leon Kennedy</h6>
+                                                            <p>Deloitte</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user4.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Ashley Graham</h6>
+                                                            <p>Developer</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user5.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Mike Miller</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="user_data">
+                                                    <div class="pic_and_name">
+                                                        <div class="image"><img src="assets/images/user6.png" alt="user" /></div>
+                                                        <div class="data">
+                                                            <h6>Kristen Stewart</h6>
+                                                            <p>US Airlines</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view_user"><a href="#">View</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 single_block mb-4">
+                        <div class="shadow_box">
+                            <div class="title_part">
+                                <h4>Recent Coach Reports</h4>
+                                <div class="recent_filter"><img src="assets/images/filter.png" alt="filter"></div>
+                            </div>
+                            <div class="recent_filter_part">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-2"><input type="text" class="form-control" placeholder="Coach Name" /></div>
+                                        <div class="col-lg-6 mb-2">
+                                            <select class="form-control">
+                                                <option>Select Categories</option>
+                                                <option>WholeFoods</option>
+                                                <option>US Airlines</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12"><button class="submit">Apply Filter</button></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="all_list_data">
+                                <ul>
+                                   
+                                    <li>
+                                        <div class="user_data">
+                                            <div class="pic_and_name">
+                                                <div class="image"><img src="assets/images/user2.png" alt="user" /></div>
+                                                <div class="data">
+                                                    <h6>Ada Wong</h6>
+                                                    <p>Wholefoods</p>
+                                                </div>
+                                            </div>
+                                            <div class="view_user">
+                                                <a href="#">View</a>
+                                                <button><img src="assets/images/download-ico.svg" alt="icon" /></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="user_data">
+                                            <div class="pic_and_name">
+                                                <div class="image"><img src="assets/images/user3.png" alt="user" /></div>
+                                                <div class="data">
+                                                    <h6>Leon Kennedy</h6>
+                                                    <p>Deloitte</p>
+                                                </div>
+                                            </div>
+                                            <div class="view_user">
+                                                <a href="#">View</a>
+                                                <button><img src="assets/images/download-ico.svg" alt="icon" /></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="user_data">
+                                            <div class="pic_and_name">
+                                                <div class="image"><img src="assets/images/user4.png" alt="user" /></div>
+                                                <div class="data">
+                                                    <h6>Ashley Graham</h6>
+                                                    <p>Developer</p>
+                                                </div>
+                                            </div>
+                                            <div class="view_user">
+                                                <a href="#">View</a>
+                                                <button><img src="assets/images/download-ico.svg" alt="icon" /></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="user_data">
+                                            <div class="pic_and_name">
+                                                <div class="image"><img src="assets/images/user1.png" alt="user" /></div>
+                                                <div class="data">
+                                                    <h6>Kristen Stewart</h6>
+                                                    <p>US Airlines</p>
+                                                </div>
+                                            </div>
+                                            <div class="view_user">
+                                                <a href="#">View</a>
+                                                <button><img src="assets/images/download-ico.svg" alt="icon" /></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="user_data">
+                                            <div class="pic_and_name">
+                                                <div class="image"><img src="assets/images/user5.png" alt="user" /></div>
+                                                <div class="data">
+                                                    <h6>Mike Miller</h6>
+                                                    <p>US Airlines</p>
+                                                </div>
+                                            </div>
+                                            <div class="view_user">
+                                                <a href="#">View</a>
+                                                <button><img src="assets/images/download-ico.svg" alt="icon" /></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="user_data">
+                                            <div class="pic_and_name">
+                                                <div class="image"><img src="assets/images/user6.png" alt="user" /></div>
+                                                <div class="data">
+                                                    <h6>Kristen Stewart</h6>
+                                                    <p>US Airlines</p>
+                                                </div>
+                                            </div>
+                                            <div class="view_user">
+                                                <a href="#">View</a>
+                                                <button><img src="assets/images/download-ico.svg" alt="icon" /></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+    // first chart
+    var options = {
+    chart: {
+        height: 260,
+        type: "radialBar"
+    },
+    series: [55],
+    plotOptions: {
+        radialBar: {
+        hollow: {
+            margin: 15,
+            size: "70%"
+        },
+        
+        dataLabels: {
+            showOn: "always",
+            name: {
+                offsetY: -10,
+                show: true,
+                color: "#888",
+                fontSize: "13px"
+            },
+            value: {
+                offsetY: -5,
+                color: "#111",
+                fontSize: "24px",
+                show: true
+            }
+        }
+        }
+    },
+    fill: {
+        colors: ['#5FC1B8'],
+    },
+    stroke: {
+        lineCap: "round",
+    },
+    labels: [""]
+    };
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+    // second chart
+    var options = {
+    chart: {
+        height: 260,
+        type: "radialBar"
+    },
+    series: [28],
+    plotOptions: {
+        radialBar: {
+        hollow: {
+            margin: 15,
+            size: "70%"
+        },
+        
+        dataLabels: {
+            showOn: "always",
+            name: {
+                offsetY: -10,
+                show: true,
+                color: "#888",
+                fontSize: "13px"
+            },
+            value: {
+                offsetY: -5,
+                color: "#111",
+                fontSize: "24px",
+                show: true
+            }
+        }
+        }
+    },
+    fill: {
+        colors: ['#E13B3B'],
+    },
+    stroke: {
+        lineCap: "round",
+    },
+    labels: [""]
+    };
+    var chart = new ApexCharts(document.querySelector("#chart2"), options);
+    chart.render();
+
+    // Revenu chart
+    var options = {
+          series: [{
+          data: [{
+              x: new Date(1538778600000),
+              y: [225, 656, 987, 561]
+            },
+            {
+              x: new Date(1538780400000),
+              y: [658, 321, 658, 145]
+            },
+            {
+              x: new Date(1538782200000),
+              y: [978, 654, 879, 615]
+            },
+            {
+              x: new Date(1538784000000),
+              y: [165, 435, 985, 235]
+            },
+            {
+              x: new Date(1538785800000),
+              y: [651, 985, 321, 055]
+            },
+            {
+              x: new Date(1538787600000),
+              y: [545, 321, 355, 445]
+            },
+            {
+              x: new Date(1538789400000),
+              y: [985, 156, 358, 555]
+            },
+            {
+              x: new Date(1538791200000),
+              y: [465, 357, 414, 441]
+            },
+          ]
+        }],
+          chart: {
+          type: 'candlestick',
+          height: 400
+        },
+        title: {
+          text: 'Total Revenue',
+          align: 'left'
+        },
+        xaxis: {
+          type: 'datetime'
+        },
+        yaxis: {
+          tooltip: {
+            enabled: true
+          }
+        }
+    };
+    var chart = new ApexCharts(document.querySelector("#revenueChart"), options);
+    chart.render();
+
+    // Plan individual chart
+    var options = {
+        series: [
+        {
+            name: 'Cashflow',
+            type: 'column',
+            data: [10, 20, 60, 30, 25, 40, 55, 75]
+        },
+        ],
+        chart: {
+          height: 350,
+          type: 'line',
+        },
+        stroke: {
+          width: [1, 1, 4]
+        },
+        title: {
+          text: 'Plan Individual',
+          align: 'left'
+        },
+        xaxis: {
+          categories: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+        },
+        };
+        var chart = new ApexCharts(document.querySelector("#individualPlan"), options);
+        chart.render();
+
+    // Plan Enterprise chart
+    var options = {
+        series: [
+        {
+            name: 'Cashflow',
+            type: 'column',
+            data: [20, 40, 55, 20, 66, 63, 20, 12]
+        },
+        ],
+        chart: {
+          height: 350,
+          type: 'line',
+        },
+        stroke: {
+          width: [1, 1, 4]
+        },
+        title: {
+          text: 'Plan Enterprise',
+          align: 'left'
+        },
+        xaxis: {
+          categories: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+        },
+        };
+        var chart = new ApexCharts(document.querySelector("#EnterprisePlan"), options);
+        chart.render();
+</script>
+</body>
+</html>

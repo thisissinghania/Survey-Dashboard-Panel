@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="LRC">
+<meta name="description" content="LRC">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="LRC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/responsive.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="fixed_loading">
+        <div class="fixed_loading_inset">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <div class="col-sm-5 left_header p-0">
+            <div class="toggle_bar"><span></span></div>
+            <div class="logo"><img src="assets/images/logo.png" alt="logo" /></div>
+        </div>
+
+        <div class="col-sm-7 right_header p-0">
+            <div class="search">
+                <div class="search_area">
+                    <form>
+                        <input type="text" placeholder="Type Something...">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <button class="search_icon"><img src="assets/images/search.svg" alt="search" /></button>
+                <button class="search_close"><img src="assets/images/close.svg" alt="close" /></button>
+            </div>
+            <div class="notifications">
+                <div class="dropdown">
+                    <i class="fa fa-circle"></i>
+                    <button class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"><img src="assets/images/notification.svg" alt="notification" /></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vitae
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="user">
+            <div class="image"><img src="assets/images/user.png"  alt="user"/></div>
+            <div class="user_name">
+                <h4>Myoshia Boykin</h4>
+                <p>Co. Founder</p>
+            </div>
+            <div class="logout">
+                <button><img src="assets/images/logout.svg" alt="logout" /></button>
+            </div>
+        </div>
+
+        <div class="nav_area">
+            <ul>
+                <li><a href="index.html"><span><img src="assets/images/dashboard.svg" alt="dashboard" /></span> <p>dashboard</p></a></li>
+                <li><a href="coaches.html"><span><img src="assets/images/coaches.svg" alt="coaches" /></span> <p>coaches</p></a></li>
+                <li class="active"><a href="clients.html"><span><img src="assets/images/clients.svg" alt="clients" /></span> <p>clients</p></a></li>
+                <li><a href="participants.html"><span><img src="assets/images/participants.svg" alt="participants" /></span> <p>participants</p></a></li>
+                <li><a href="surveys.html"><span><img src="assets/images/surveys.svg" alt="surveys" /></span> <p>surveys</p></a></li>
+                <li><a href="revenue.html"><span><img src="assets/images/revenue.svg" alt="revenue" /></span> <p>revenue</p></a></li>
+                <li><a href="reports.html"><span><img src="assets/images/reports.svg" alt="reports" /></span> <p>reports</p></a></li>
+            </ul>
+        </div>
+        <div class="copyright">Copyright &copy; 2022</div>
+    </aside>
+
+
+    <section class="display_section">
+        <div class="inside">
+
+            <div class="col-sm-12 plans_pricing mt-3">
+                <div class="row">
+
+                    <div class="col-lg-12 single_block mb-4">
+                        <div class="shadow_box">
+                            <div class="page_title with_go_back">
+                                <a href="coaches.html"><img src="assets/images/go-back.svg" alt="go-back /"></a>
+                                <h4>Add New Client</h4>
+                            </div>
+                           <div class="form_data">
+                                <form>
+                                    <div class="title"><h2>Personal Details</h2></div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Phone</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Country</label>
+                                                <select class="form-control">
+                                                    <option>United States ( USA )</option>
+                                                    <option>Canada</option>
+                                                    <option>India</option>
+                                                    <option>Australia</option>
+                                                    <option>China</option>
+                                                    <option>Japan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>State</label>
+                                                <select class="form-control">
+                                                    <option>California</option>
+                                                    <option>Texas</option>
+                                                    <option>Florida</option>
+                                                    <option>Virgina</option>
+                                                    <option>Alaska</option>
+                                                    <option>Hawai</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>City</label>
+                                                <select class="form-control">
+                                                    <option>Los Angeles</option>
+                                                    <option>San Diego</option>
+                                                    <option>San Bruno</option>
+                                                    <option>Oakland</option>
+                                                    <option>Long Beach</option>
+                                                    <option>Santa Monica</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Title</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Zipcode</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Organization</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Organization URL</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-3">
+                                            <div class="form-group">
+                                                <label>Assign Coach</label>
+                                                <select class="form-control">
+                                                    <option>Ada Wong</option>
+                                                    <option>Leon Kennedy</option>
+                                                    <option>Ashley Graham</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 d-flex justify-content-center form_buttons mt-2">
+                                        <button class="reset" type="reset">Cancel</button>
+                                        <button class="submit" type="submit">Save</button>
+                                    </div>
+                                </form>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/dataTable.js"></script>
+<script src="assets/js/dataTables.responsive.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

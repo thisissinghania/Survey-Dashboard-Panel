@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="LRC">
+<meta name="description" content="LRC">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="LRC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/responsive.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="fixed_loading">
+        <div class="fixed_loading_inset">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <div class="col-sm-5 left_header p-0">
+            <div class="toggle_bar"><span></span></div>
+            <div class="logo"><img src="assets/images/logo.png" alt="logo" /></div>
+        </div>
+
+        <div class="col-sm-7 right_header p-0">
+            <div class="search">
+                <div class="search_area">
+                    <form>
+                        <input type="text" placeholder="Type Something...">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <button class="search_icon"><img src="assets/images/search.svg" alt="search" /></button>
+                <button class="search_close"><img src="assets/images/close.svg" alt="close" /></button>
+            </div>
+            <div class="notifications">
+                <div class="dropdown">
+                    <i class="fa fa-circle"></i>
+                    <button class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"><img src="assets/images/notification.svg" alt="notification" /></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vitae
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="user">
+            <div class="image"><img src="assets/images/user.png"  alt="user"/></div>
+            <div class="user_name">
+                <h4>Myoshia Boykin</h4>
+                <p>Co. Founder</p>
+            </div>
+            <div class="logout">
+                <button><img src="assets/images/logout.svg" alt="logout" /></button>
+            </div>
+        </div>
+
+        <div class="nav_area">
+            <ul>
+                <li><a href="index.html"><span><img src="assets/images/dashboard.svg" alt="dashboard" /></span> <p>dashboard</p></a></li>
+                <li><a href="coaches.html"><span><img src="assets/images/coaches.svg" alt="coaches" /></span> <p>coaches</p></a></li>
+                <li><a href="clients.html"><span><img src="assets/images/clients.svg" alt="clients" /></span> <p>clients</p></a></li>
+                <li><a href="participants.html"><span><img src="assets/images/participants.svg" alt="participants" /></span> <p>participants</p></a></li>
+                <li class="active"><a href="surveys.html"><span><img src="assets/images/surveys.svg" alt="surveys" /></span> <p>surveys</p></a></li>
+                <li><a href="revenue.html"><span><img src="assets/images/revenue.svg" alt="revenue" /></span> <p>revenue</p></a></li>
+                <li><a href="reports.html"><span><img src="assets/images/reports.svg" alt="reports" /></span> <p>reports</p></a></li>
+            </ul>
+        </div>
+        <div class="copyright">Copyright &copy; 2022</div>
+    </aside>
+
+
+    <section class="display_section">
+        <div class="inside">
+
+            <div class="col-sm-12 plans_pricing mt-3">
+                <div class="row">
+
+                    <div class="col-lg-12 single_block mb-4">
+                        <div class="shadow_box">
+                            <div class="page_title with_go_back">
+                                <a href="surveys.html"><img src="assets/images/go-back.svg" alt="go-back /"></a>
+                                <h4>Survey Detail</h4>
+                            </div>
+                           <div class="survey_detail mt-3">
+                                <div class="detail_topbar">
+                                    <div class="image"><img src="assets/images/survey_logo.png" /></div>
+                                    <div class="about_info">
+                                        <ul>
+                                            <li>
+                                                <span>Survey Coach</span>
+                                                <strong>Ada Wong</strong>
+                                            </li>
+                                            <li>
+                                                <span>Survey Client</span>
+                                                <strong>Leon Kennedy</strong>
+                                            </li>
+                                            <li>
+                                                <span>Survey Created Date</span>
+                                                <strong>20 Aug 2022</strong>
+                                            </li>
+                                            <li>
+                                                <span>Participants</span>
+                                                <strong>50</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="progress_chart">
+                                        <div id="chart2"></div>
+                                    </div>
+                                </div>
+                           </div>
+                            <div class="divider"><hr /></div>
+                            <div class="survey_title">
+                                <h3>Monthly Testing Survey</h3>
+                                <button>Download Report</button>
+                            </div>
+                            <div class="survey_instruction"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+                            <div class="all_question">
+                                <table class="survey_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No</th>
+                                            <th>Question</th>
+                                            <th>Answer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><div class="qu_no">Q1</div></td>
+                                            <td><h6 class="qu_name">Over the last several months, how has this person improved ?</h6></td>
+                                            <td>
+                                                <ul>
+                                                    <li>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                                        <a href="#">Ashley graham</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        <a href="#">Leon Kennedy</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                                        <a href="#">Ada Wong</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                                                        <a href="#">Mike Miller</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="qu_no">Q2</div></td>
+                                            <td><h6 class="qu_name">How else has this person been more effective over the last several months ?</h6></td>
+                                            <td>
+                                                <ul>
+                                                    <li>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                                        <a href="#">Ashley graham</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        <a href="#">Leon Kennedy</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                                        <a href="#">Ada Wong</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                                                        <a href="#">Mike Miller</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="qu_no">Q3</div></td>
+                                            <td><h6 class="qu_name">What new skills or behaviours would make this person even more effective ?</h6></td>
+                                            <td>
+                                                <ul>
+                                                    <li>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                                        <a href="#">Ashley graham</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        <a href="#">Leon Kennedy</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                                        <a href="#">Ada Wong</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                                                        <a href="#">Mike Miller</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="qu_no">Q4</div></td>
+                                            <td><h6 class="qu_name">How else could this person continue to improve ?</h6></td>
+                                            <td>
+                                                <ul>
+                                                    <li>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                                        <a href="#">Ashley graham</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        <a href="#">Leon Kennedy</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                                        <a href="#">Ada Wong</a>
+                                                    </li>
+                                                    <li>
+                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                                                        <a href="#">Mike Miller</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/dataTable.js"></script>
+<script src="assets/js/dataTables.responsive.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+      // second chart
+      var options = {
+    chart: {
+        height: 220,
+        type: "radialBar"
+    },
+    series: [28],
+    plotOptions: {
+        radialBar: {
+        hollow: {
+            margin: 15,
+            size: "70%"
+        },
+        
+        dataLabels: {
+            showOn: "always",
+            name: {
+                offsetY: -10,
+                show: true,
+                color: "#000",
+                fontSize: "15px"
+            },
+            value: {
+                offsetY: 5,
+                color: "#111",
+                fontSize: "24px",
+                show: true
+            }
+        }
+        }
+    },
+    fill: {
+        colors: ['#E13B3B'],
+    },
+    stroke: {
+        lineCap: "round",
+    },
+    labels: ["Progress"]
+    };
+    var chart = new ApexCharts(document.querySelector("#chart2"), options);
+    chart.render();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="LRC">
+<meta name="description" content="LRC">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="LRC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/responsive.dataTables.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="fixed_loading">
+        <div class="fixed_loading_inset">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <div class="col-sm-5 left_header p-0">
+            <div class="toggle_bar"><span></span></div>
+            <div class="logo"><img src="assets/images/logo.png" alt="logo" /></div>
+        </div>
+
+        <div class="col-sm-7 right_header p-0">
+            <div class="search">
+                <div class="search_area">
+                    <form>
+                        <input type="text" placeholder="Type Something...">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <button class="search_icon"><img src="assets/images/search.svg" alt="search" /></button>
+                <button class="search_close"><img src="assets/images/close.svg" alt="close" /></button>
+            </div>
+            <div class="notifications">
+                <div class="dropdown">
+                    <i class="fa fa-circle"></i>
+                    <button class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"><img src="assets/images/notification.svg" alt="notification" /></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vitae
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="user">
+            <div class="image"><img src="assets/images/user.png"  alt="user"/></div>
+            <div class="user_name">
+                <h4>Myoshia Boykin</h4>
+                <p>Co. Founder</p>
+            </div>
+            <div class="logout">
+                <button><img src="assets/images/logout.svg" alt="logout" /></button>
+            </div>
+        </div>
+
+        <div class="nav_area">
+            <ul>
+                <li><a href="index.html"><span><img src="assets/images/dashboard.svg" alt="dashboard" /></span> <p>dashboard</p></a></li>
+                <li class="active"><a href="coaches.html"><span><img src="assets/images/coaches.svg" alt="coaches" /></span> <p>coaches</p></a></li>
+                <li><a href="clients.html"><span><img src="assets/images/clients.svg" alt="clients" /></span> <p>clients</p></a></li>
+                <li><a href="participants.html"><span><img src="assets/images/participants.svg" alt="participants" /></span> <p>participants</p></a></li>
+                <li><a href="surveys.html"><span><img src="assets/images/surveys.svg" alt="surveys" /></span> <p>surveys</p></a></li>
+                <li><a href="revenue.html"><span><img src="assets/images/revenue.svg" alt="revenue" /></span> <p>revenue</p></a></li>
+                <li><a href="reports.html"><span><img src="assets/images/reports.svg" alt="reports" /></span> <p>reports</p></a></li>
+            </ul>
+        </div>
+        <div class="copyright">Copyright &copy; 2022</div>
+    </aside>
+
+
+    <section class="display_section">
+        <div class="inside">
+
+            <div class="col-lg-12 single_block mt-3 mb-4">
+                <div class="shadow_box">
+
+                    <div class="page_title with_go_back">
+                        <a href="coaches.html"><img src="assets/images/go-back.svg" alt="go-back /"></a>
+                        <h4>Coach Detail</h4>
+                    </div>
+
+                    <!-- detail section -->
+                    <div class="row">
+                        <div class="col-lg-3 mt-4 left_block">
+                            <div class="profile_area">
+                                <div class="image"><img src="assets/images/coach.png" alt="coach" /></div>
+                                <div class="title"><img src="assets/images/member.svg" alt="member" /></div>
+                                <div class="name">Kristen Stewart</div>
+                                <div class="email">kristenstewart196@gmail.com</div>
+                                <div class="phone"><p><img src="assets/images/phone.png" alt="phone" /></p><span>+1-5454-5156-45</span></div>
+                                <div class="address"><p><img src="assets/images/address.png" alt="address" /></p><span>#123 Street Road, California (Near Super Mall Market) 90001</span></div>
+                            </div>
+                            <div class="membership-expiry">
+                                <ul>
+                                    <li>
+                                        <span>Join Date :</span>
+                                        <p>21 Feb 2022</p>
+                                    </li>
+                                    <li>
+                                        <span>Expiry Date :</span>
+                                        <p>21 Feb 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 mt-4 center_block">
+                            <div class="headline">Personal Details</div>
+                            <div class="detail_list">
+                                <ul>
+                                    <li>
+                                        <span>Title</span>
+                                        <p>CEO & Founder</p>
+                                    </li>
+                                    <li>
+                                        <span>Country</span>
+                                        <p>United States</p>
+                                    </li>
+                                    <li>
+                                        <span>State</span>
+                                        <p>California</p>
+                                    </li>
+                                    <li>
+                                        <span>City</span>
+                                        <p>Los Angeles</p>
+                                    </li>
+                                    <li>
+                                        <span>Zipcode</span>
+                                        <p>90001</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="headline">Company Details</div>
+                            <div class="detail_list">
+                                <ul>
+                                    <li>
+                                        <span>Name</span>
+                                        <p>ABC Corporation</p>
+                                    </li>
+                                    <li>
+                                        <span>Email</span>
+                                        <p>info@abc.com</p>
+                                    </li>
+                                    <li>
+                                        <span>URL</span>
+                                        <p>https://www.abc.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-4 right_block">
+                            <div class="avail_data">
+                                <ul>
+                                    <li>
+                                        <div class="data">
+                                            <p>Total Clients</p>
+                                            <h3>26</h3>
+                                        </div>
+                                        <div class="image"><img src="assets/images/clients.png" alt="clients"></div>
+                                    </li>
+                                    <li>
+                                        <div class="data">
+                                            <p>Active Surveys</p>
+                                            <h3>12</h3>
+                                        </div>
+                                        <div class="image"><img src="assets/images/active-survey.png" alt="active-survey"></div>
+                                    </li>
+                                    <li>
+                                        <div class="data">
+                                            <p>Completed Surveys</p>
+                                            <h3>16</h3>
+                                        </div>
+                                        <div class="image"><img src="assets/images/leadership.png" alt="leadership"></div>
+                                    </li>
+                                    <li>
+                                        <div class="data">
+                                            <p>Pending Surveys</p>
+                                            <h3>10</h3>
+                                        </div>
+                                        <div class="image"><img src="assets/images/draft.png" alt="draft"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt-4 center_block desc_area">
+                            <div class="headline">About Company</div>
+                            <div class="description">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- all listings -->
+                    <div class="below-title"><h4>All Clients</h4></div>
+                    <div class="table_design">
+                        <div class="sort_by">
+                            <select>
+                                <option disabled selected>Sort by</option>
+                                <option>New Entries</option>
+                                <option>Old Entries</option>
+                            </select>
+                        </div>
+                        <table class="tableLayout responsive nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Sr. No</th>
+                                    <th>Profile</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Organization</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><div class="table_profile"><img src="assets/images/profile1.png" alt="profile" /></div></td>
+                                    <td>Ada Wong</td>
+                                    <td>johndoe@gmail.com</td>
+                                    <td>US Airlines</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="client-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><div class="table_profile"><img src="assets/images/profile2.png" alt="profile" /></div></td>
+                                    <td>Jane Jennifer</td>
+                                    <td>janejennifer@gmail.com</td>
+                                    <td>Deloitte</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="client-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><div class="table_profile"><img src="assets/images/profile3.png" alt="profile" /></div></td>
+                                    <td>Kristen Stewart</td>
+                                    <td>kristen@gmail.com</td>
+                                    <td>Farmacy</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="client-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><div class="table_profile"><img src="assets/images/profile4.png" alt="profile" /></div></td>
+                                    <td>Ashley Graham</td>
+                                    <td>ashley666@gmail.com</td>
+                                    <td>US Airlines</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="client-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><div class="table_profile"><img src="assets/images/profile5.png" alt="profile" /></div></td>
+                                    <td>Alexandra</td>
+                                    <td>itismealex@gmail.com</td>
+                                    <td>Deloitte</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="client-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><div class="table_profile"><img src="assets/images/profile6.png" alt="profile" /></div></td>
+                                    <td>John Doe</td>
+                                    <td>johndoe@gmail.com</td>
+                                    <td>Farmacy</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <div class="all_buttons">
+                                            <a href="client-detail.html" class="view"><img src="assets/images/view.svg" alt="view" /></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/dataTable.js"></script>
+<script src="assets/js/dataTables.responsive.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
